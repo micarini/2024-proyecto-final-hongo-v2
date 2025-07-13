@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hongo - Proyecto Final</title>
+    <meta name="description" content="Hongo is a modern and multi-purpose, super fast and highly flexible WordPress theme which is specially curated for creating WooCommerce online store, company website and blog.">
+    <meta name="keywords" content="creative, modern, clean, bootstrap responsive, WordPress theme, drag & drop page builder, revolution slider, html5, css3, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, personal, wpml, Yoast SEO, masonry, grid, coming soon, faq">
+    <link rel="icon" href="assets/fotos/hongo-favicon.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/74915e9a34.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+   <header id="top" class="relative w100">
+        <!-- HEADER NEGRO -->
+        <div class="header-negro flex sb fondo-negro align-c em1">
+            <ul class="redes flex row wrap flex-start align-c gap15 no-style">
+                <li><a href="facebook.html" class="txtblanco em15"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="x.html" class="txtblanco em15"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="linkedin.html" class="txtblanco em15"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="instagram.html" class="txtblanco em15"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+            <h4 class="center txtblanco fw500 txt-c">CUSTOMER SUPPORT 0123-456-789</h4>
+            <nav class="menu-wrapper relative"> <!-- responsive -->
+            <button class="menu-toggle-negro" aria-label="Abrir menú">☰ MENU</button> <!-- responsive -->
+            <ul class="menu2 flex no-style txt-l">
+                <li><a href="about.html" class="uppercase txtblanco">About</a></li>
+                <li><a href="store.html" class="uppercase txtblanco">Store</a></li>
+                <li><a href="newsletter.html" class="uppercase txtblanco">Newsletter</a></li>
+                <li><a href="faqs.html" class="uppercase txtblanco">FAQs</a></li>
+            </ul>
+            </nav>
+        </div>
+      
+        <!-- HEADER BLANCO -->
+        <div class="header-blanco flex sb align-c fondo-blanco">
+            <div class="logo-hongo">
+                <img src="assets/fotos/logo-hongo.png" alt="logo hongo">
+            </div>
+<!-- boton menu responsive -->
+            <button class="menu-toggle-blanco" aria-label="Abrir menú">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+            <nav class="menu flex align-c txt-c">
+                <ul class="flex no-list-style">
+                    <li><a href="index.html" class="fw400">Home</a></li>
+                    <li><a href="shop.html" class="fw400">Shop</a></li>
+                    <li><a href="store_locator.html" class="fw400">Store Locator</a></li>
+                    <li><a href="contact.html" class="fw400">Contact</a></li>
+                    <li><a href="blog.html" class="fw400">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="symbols flex align-c">
+                <ul class="flex gap10 no-list-style">
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>  
+
+    <main>
+        <!--BANNER-->
+        <section id="banner-shop" class="align-c justify-c relative txt-l cover norepeat bgcenter w100">
+            <div class="banner-texto">
+                <h4>Decor design solutions</h4>
+                <h2>SHOP CLASSIC</h2>
+            </div>
+        </section>
+        <!--BANNER-->
+        <nav class="breadcrumb">
+            <a href="index.html">Home</a> | <a href="shop.html">Shop classic</a>
+        </nav>
+
+        <!-- BOTÓN SIDEBAR SOLO EN MOBILE, AHORA EN EL LUGAR CORRECTO -->
+        <button class="sidebar-toggle" aria-label="Abrir filtros">Sidebar</button>
+
+        <section class="container-shop ">
+            <!--SIDEBAR-->
+            <section class="sidebar-shop">
+                <div class="filter-section marginbot4em filter-color">
+                    <h3 class="em12 fw400">Filter by color</h3>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" name="color" value="black">
+                                <span class="color-circle black"></span> Black
+                            </label>
+                            <span class="num-categories">55</span>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="color" value="blue">
+                                <span class="color-circle blue"></span> Blue
+                            </label>
+                            <span class="num-categories">24</span>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="color" value="brown">
+                                <span class="color-circle brown"></span> Brown
+                            </label>
+                            <span class="num-categories">72</span>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="color" value="green">
+                                <span class="color-circle green"></span> Green
+                            </label>
+                            <span class="num-categories">14</span>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="color" value="red">
+                                <span class="color-circle red"></span> Red
+                            </label>
+                            <span class="num-categories">17</span>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="color" value="silver">
+                                <span class="color-circle silver"></span> Silver
+                            </label>
+                            <span class="num-categories">21</span>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="color" value="yellow">
+                                <span class="color-circle yellow"></span> Yellow
+                            </label>
+                            <span class="num-categories">17</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="filter-section marginbot4em filter-size">
+                    <h3 class="em12 fw400">Filter by size</h3>
+                    <ul>
+                        <li><label><input type="radio" name="size" value="L"> L</label>
+                            <span class="num-categories">74</span>
+                        </li>
+                        <li><label><input type="radio" name="size" value="M"> M</label>
+                            <span class="num-categories">101</span>
+                        </li>
+                        <li><label><input type="radio" name="size" value="S"> S</label>
+                            <span class="num-categories">87</span>
+                        </li>
+                        <li><label><input type="radio" name="size" value="XL"> XL</label>
+                            <span class="num-categories">07</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="filter-section marginbot4em filter-price">
+                    <h3 class="em12 fw400">Filter by price</h3>
+                    <div class="price-filter flex column gap10">
+                        <input type="range" id="priceRange" min="0" max="4000" value="2000">
+                        <input type="text" id="priceText" value="Price: £0 - £4,000">
+                    </div>
+                </div>
+
+                <div class="filter-section marginbot4em filter-rating">
+                    <h3 class="em12 fw400">Average rating</h3>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" name="rating" value="5">
+                                <span class="stars em15">★★★★★</span>
+                            </label>
+                            <span class="num-categories">17</span>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="rating" value="4">
+                                <span class="stars em15">★★★★☆</span>
+                            </label>
+                            <span class="num-categories">09</span>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="rating" value="3">
+                                <span class="stars em15">★★★☆☆</span>
+                            </label>
+                            <span class="num-categories">02</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="filter-section tags-shop marginbot4em">
+                    <h3 class="em12 fw400">Product tags</h3>
+                    <div class="tagcloud">
+                        <a href="shop.html">Coats</a>
+                        <a href="shop.html">Cotton</a>
+                        <a href="shop.html">Dresses</a>
+                        <a href="shop.html">Jackets</a>
+                        <a href="shop.html">Polyester</a>
+                        <a href="shop.html">Printed</a>
+                        <a href="shop.html">Shirts</a>
+                        <a href="shop.html">Shorts</a>
+                        <a href="shop.html">Sports</a>
+                        <a href="shop.html">Tops</a>
+                    </div>
+                </div>
+
+                <div class="filter-section marginbot4em">
+                    <img src="assets/fotos/extra20off.webp">
+                </div>
+            </section>
+
+            <!--Contenido de la shop desde js -->
+            <section id="shop-container">
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="page-boton active txtgris">1</button>
+                    <button class="page-boton txtgris">2</button>
+                    <button class="page-boton txtgris">3</button>
+                    <span class="em15 txtgris">...</span>
+                    <button class="page-boton txtgris">8</button>
+                    <button class="page-boton txtgris">9</button>
+                    <button class="page-boton siguiente txtgris">&gt;</button>
+                </div>
+
+            </section>
+
+            <!-- Checkbox que activa el cambio de tema -->
+            <input type="checkbox" id="theme-toggle">
+
+            <!-- BOTON DARK MODE -->
+            <label for="theme-toggle" class="toggle-button flex align-c justify-c">
+                <!-- sol (modo claro) -->
+                <svg class="icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle> <!-- Círculo central -->
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+
+                <!-- luna (modo oscuro) -->
+                <svg class="icon moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                </svg>
+            </label>
+
+        </section>
+    </main>
+
+    <footer class="relative fondo-grisosc txtgrisb no-style center pad5">
+        <div class="footer-container grid gap2">
+            <article class="footer-articles grid margin-r5 txtgris no-style em12 lh2">
+                <h5>Company overview</h5>
+                <ul class="no-list-style margin0 padding0">
+                    <li>About company</li>
+                    <li>Our services</li>
+                    <li>Get the voucher</li>
+                    <li>Store locator</li>
+                    <li>Testimonials</li>
+                    <li>Contact information</li>
+                </ul>
+            </article>
+            <article class="footer-articles grid margin-r5 txtgris no-style em12 lh2">
+                <h5>Customer information</h5>
+                <ul class="no-list-style margin0 padding0">
+                    <li>Help and support</li>
+                    <li>Shipping and delivery</li>
+                    <li>Payment method</li>
+                    <li>Terms and conditions</li>
+                    <li>Returns and refunds</li>
+                    <li>Privacy policy</li>
+                </ul>
+            </article>
+            <article class="footer-articles grid margin-r5 txtgris no-style em12 lh2">
+                <h5>On social networks</h5>
+                <ul class="no-list-style margin0 padding0">
+                    <li><a href="facebook.html" class="no-style justify-l"><i class="fa-brands fa-facebook-f"
+                                style="color: #0056d6;"> </i>
+                            Facebook</a></li>
+                    <li><a href="x.html" class="no-style justify-l"><i class="fa-brands fa-x-twitter"
+                                style="color: #aaaaaa;"> </i> Twitter</a></li>
+                    <li><a href="linkedin.html" class="no-style justify-l"><i class="fa-brands fa-linkedin-in"
+                                style="color: #3a88fe;"> </i>
+                            LinkedIn</a></li>
+                    <li><a href="instagram.html" class="no-style justify-l"><i class="fa-brands fa-instagram"
+                                style="color: #ff4013;"> </i>
+                            Instagram</a></li>
+                    <li><a href="pinterest.html" class="no-style justify-l"><i class="fa-brands fa-pinterest-p"
+                                style="color: #e32400;"> </i>
+                            Pinterest</a></li>
+                </ul>
+            </article>
+            <article class="footer-articles grid margin-r5 txtgris no-style em12 lh2">
+                <h5>Subscribe to our newsletter</h5>
+                <p class="grid margin-r5 txtgris no-style em1 lh2">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.</p>
+                <form id="newsletterForm" class="flex align-c gap10 em1">
+                    <input type="email" id="emailFooter" name="email" placeholder="Enter your email...">
+                    <button type="submit" class="cursorp noborder">Subscribe</button>
+                </form>
+                <p class="grid margin-r5 txtgris no-style em1 lh2 padtop25">© 2024 HONGO. All rights reserved.</p>
+                </p>
+            </article>
+        </div>
+    </footer>
+    
+<script src="assets/js/shop.js"></script>
+</body>
+
+</html>
