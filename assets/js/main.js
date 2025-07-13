@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // --- MODO OSCURO ---
+    // MODO OSCURO
     const toggleButton = document.getElementById("theme-toggle");
     const body = document.body;
     if (toggleButton) {
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // --- MENÚS MOBILE ---
+    // MENÚS MOBILE
     const toggleNegro = document.querySelector(".menu-toggle-negro");
     const menunegro = document.querySelector(".menu2");
     if (toggleNegro && menunegro) {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // --- MENÚ ACTIVO ---
+    // MENÚ ACTIVO
     let currentPage = window.location.pathname.split("/").pop();
     let menuLinks = document.querySelectorAll("nav ul li a");
     for (let i = 0; i < menuLinks.length; i++) {
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // --- FORMULARIO NEWSLETTER FOOTER ---
+    // FORMULARIO NEWSLETTER FOOTER
     const newsletterForm = document.getElementById("newsletterForm");
     if (newsletterForm) {
         newsletterForm.addEventListener("submit", function (event) {
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // --- FORMULARIO COMENTARIOS/REVIEWS ---
+    // FORMULARIO COMENTARIOS/REVIEWS
     const commentForm = document.getElementById("commentsForm");
     if (commentForm) {
         commentForm.addEventListener("submit", function (event) {
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // --- FORMULARIO REVIEWS PRODUCT ---
+    // FORMULARIO REVIEWS PRODUCT
     const productForm = document.getElementById("productForm");
     if (productForm) {
         productForm.addEventListener("submit", function (event) {
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // --- FORMULARIO CONTACTO ---
+    // FORMULARIO CONTACTO
     const contactForm = document.getElementById("formcontact");
     if (contactForm) {
         contactForm.addEventListener("submit", function (event) {

@@ -1,0 +1,498 @@
+/* --- MODO OSCURO --- */
+.modo-oscuro {
+  background-color: #121212 !important;
+  color: #f5f5f5;
+}
+
+.modo-oscuro h2 {
+  color: gray;
+}
+.modo-oscuro .boton {
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+}
+
+.modo-oscuro .boton:hover {
+  background-color: #f5f5f5;
+  color: #121212;
+}
+
+.modo-oscuro #section3,
+.modo-oscuro #section6,
+.modo-oscuro #grid1,
+.modo-oscuro #grid2,
+.modo-oscuro #grid3 {
+  background-color: #000;
+}
+
+.modo-oscuro #section1,
+.modo-oscuro #section02,
+.modo-oscuro .galeria .card img {
+  filter: brightness(0.8);
+}
+
+.modo-oscuro #section2 h5,
+.modo-oscuro .botones-container button {
+  color: darkgray;
+}
+
+.modo-oscuro .galeria .card .titulo {
+  color: #d39663;
+}
+
+.modo-oscuro .galeria .card .precio {
+  color: #f5f5f5;
+}
+
+.modo-oscuro #slider {
+  background-color: #222;
+  filter: brightness(0.8);
+}
+
+.modo-oscuro #slider h2,
+.modo-oscuro #slider h5,
+.modo-oscuro #slider p,
+.modo-oscuro .botones-container button.active {
+  color: #000;
+}
+
+.modo-oscuro .instagram-decor {
+  background-color: gray;
+  color: #d39663;
+}
+
+.modo-oscuro #section3 .btn-prod {
+  color: #fff;
+}
+
+.modo-oscuro #section3 .btn-prod:hover {
+  background-color: #d39663;
+}
+
+.modo-oscuro #grid4 h3 {
+  color: #d39663;
+}
+
+.modo-oscuro #grid4 p {
+  color: #fff;
+}
+
+.modo-oscuro #grid4 {
+  filter: brightness(0.8);
+}
+
+.modo-oscuro .bordeblanco {
+  border: 3px solid #2d2d2d;
+}
+
+.modo-oscuro #banner-contact,
+.modo-oscuro .card-container-contact,
+.modo-oscuro .container-contact {
+  filter: brightness(0.8);
+}
+
+.modo-oscuro .banner-contact-texto h4,
+.modo-oscuro .card-info-contact h2,
+.modo-oscuro .card-info-contact h3,
+.modo-oscuro .slide-subtitle,
+.modo-oscuro #prev-contact,
+.modo-oscuro #next-contact {
+  color: #d39663;
+}
+
+.modo-oscuro .section1-contact-h2 {
+  color: #fff !important;
+}
+
+.modo-oscuro .breadcrumb a:hover {
+  color: #fd9d38;
+}
+
+.modo-oscuro #contact-main,
+.modo-oscuro .card-container-contact,
+.modo-oscuro .container-contact,
+.modo-oscuro .card-info-contact,
+.modo-oscuro .sec4-contact,
+.modo-oscuro #prev-contact,
+.modo-oscuro #next-contact,
+.modo-oscuro #sectionvacia {
+  background-color: #2d2d2d;
+}
+
+.modo-oscuro .section1-contact-h2 {
+  color: #ffffff;
+}
+
+.modo-oscuro .card-contact {
+  background-color: #232323;
+  color: #ffffff;
+}
+
+.modo-oscuro .shop-btn {
+  background-color: #000000;
+  color: #b3b3b3;
+}
+
+.modo-oscuro .btn-slide:hover,
+.modo-oscuro .shop-btn:hover {
+  background-color: #b3b3b3;
+  color: #000000;
+}
+
+.modo-oscuro .text-contact p {
+  color: #b3b3b3;
+}
+
+.modo-oscuro .sec6-contact h2,
+.modo-oscuro .play-button i {
+  color: #fff;
+}
+
+.modo-oscuro #formcontact button {
+  color: #000;
+  background-color: #fff;
+}
+
+.modo-oscuro .posts,
+.modo-oscuro .posts article {
+  background-color: #2d2d2d;
+  color: #ddd;
+}
+
+.modo-oscuro .posts .fondo-blanco,
+.modo-oscuro .posts .post-footer {
+  background-color: #2d2d2d !important;
+  color: #fff;
+}
+
+.modo-oscuro .posts .post-h2,
+.modo-oscuro .posts .post-p,
+.modo-oscuro .posts .post-footer i,
+.modo-oscuro .posts .quote-text,
+.modo-oscuro .posts .meta {
+  color: #ccc;
+}
+
+.modo-oscuro .posts .post-btn {
+  background-color: #232323;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.modo-oscuro .posts .post-btn:hover {
+  background-color: #888;
+}
+
+.modo-oscuro .posts .post-video video,
+.modo-oscuro .posts .post-ytvideo iframe,
+.modo-oscuro .posts .post-gallery,
+.modo-oscuro #main-blog,
+.modo-oscuro .container-blog,
+.modo-oscuro .posts .post-blockquote,
+.modo-oscuro .posts .post-slider {
+  background-color: #2d2d2d;
+}
+
+.modo-oscuro #banner-blog {
+  filter: brightness(0.8);
+}
+
+body.modo-oscuro {
+  background-color: #151515 !important;
+}
+
+body[data-page="contact"].modo-oscuro {
+  background-color: white !important;
+}
+
+.modo-oscuro .sidebar p,
+.modo-oscuro .sidebar-blogp p {
+  color: #ccc;
+}
+
+.modo-oscuro .sidebar-section {
+  background-color: #2d2d2d;
+  border: 1px solid #555;
+}
+
+.modo-oscuro .tagcloud a {
+  border: 1px solid #444;
+  background-color: #444;
+  color: #bbb;
+}
+
+.modo-oscuro .tagcloud a:hover {
+  background-color: #d39663;
+  color: #fff;
+}
+
+.modo-oscuro .input-mail input[type="email"] {
+  background-color: #555;
+  color: #eee;
+  border: 1px solid #777;
+}
+
+.modo-oscuro .input-mail input[type="email"]::placeholder {
+  color: #aaa;
+}
+
+.modo-oscuro .search-form {
+  background-color: #2d2d2d;
+  color: #ddd;
+  border: 1px solid #555;
+}
+
+.modo-oscuro .search-form input[type="text"] {
+  background-color: #2d2d2d;
+  color: #eee;
+}
+
+.modo-oscuro .search-form input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+.modo-oscuro .search-form button {
+  background-color: #2d2d2d;
+  color: #fff;
+}
+
+.modo-oscuro .search-form button:hover {
+  background-color: #888;
+}
+
+.modo-oscuro .search-form i {
+  color: #fff;
+}
+
+.modo-oscuro .img-container2 {
+  background-color: gray;
+}
+.modo-oscuro .related-posts-bp {
+  filter: brightness(0.8);
+}
+.modo-oscuro .reply-bp {
+  background-color: #d39663;
+}
+
+.modo-oscuro .txt-block,
+.modo-oscuro .img-container2,
+.modo-oscuro .img-caption3-bp,
+.modo-oscuro .img-caption2-bp,
+.modo-oscuro .img-caption1-bp,
+.modo-oscuro .preview-image,
+.modo-oscuro .pfp,
+.modo-oscuro .img-fashionweek,
+.modo-oscuro .popular-item-large {
+  filter: brightness(0.8);
+}
+
+.modo-oscuro .img-left-bp figcaption {
+  color: black;
+}
+
+.modo-oscuro .reply-bp:hover {
+  background-color: #ff7f50;
+}
+
+.modo-oscuro #commentsForm {
+  filter: brightness(0.8);
+}
+
+.modo-oscuro .submit-btn {
+  background-color: #d39663;
+}
+
+.modo-oscuro .submit-btn:hover {
+  background-color: #ff7f50;
+}
+
+.modo-oscuro .breadcrumb-prod,
+.modo-oscuro .breadcrumb-prod a,
+.modo-oscuro .txtnegro,
+.modo-oscuro .accordion-boton,
+.modo-oscuro .add-to-wishlist,
+.modo-oscuro .add-to-compare,
+.modo-oscuro .social-links a,
+.modo-oscuro .cardProd2 .titulo {
+  color: #d39663;
+}
+
+.modo-oscuro .add-to-cart {
+  border: 2px solid #d39663;
+  background-color: #1c1c1c;
+  color: #f4f3f3;
+}
+
+.modo-oscuro .add-to-cart:hover {
+  background-color: #d39663;
+  color: #1c1c1c;
+}
+
+.modo-oscuro .add-to-wishlist:hover,
+.modo-oscuro .add-to-compare:hover,
+.modo-oscuro .cardProd2 .precio {
+  color: #f4f3f3;
+}
+
+.modo-oscuro .divider {
+  border-top: 1px solid #333;
+}
+
+.modo-oscuro #gridProduct .cardProd1 img,
+.modo-oscuro #gridProduct2 .cardProd2 img {
+  filter: brightness(0.8);
+}
+
+.modo-oscuro .header-blanco {
+  filter: brightness(0.8);
+  color: #000;
+}
+
+.modo-oscuro a {
+  color: #d39663;
+}
+
+.modo-oscuro .fondo-negro {
+  background-color: #1e1e1e;
+}
+
+.modo-oscuro #banner-shop {
+  filter: brightness(0.8);
+}
+
+.modo-oscuro .breadcrumb {
+  background-color: #1e1e1e;
+}
+.modo-oscuro .filter-section {
+  border-bottom: 1px solid #444;
+}
+
+.modo-oscuro .filter-section h3,
+.modo-oscuro .titulo {
+  color: #d39663;
+}
+
+.modo-oscuro .filter-section label:hover {
+  color: #d39663;
+}
+
+.modo-oscuro .price-filter input[type="text"] {
+  background-color: #d39663;
+  border: none;
+}
+
+.modo-oscuro .price-filter input[type="range"] {
+  background: #444;
+}
+
+.modo-oscuro .price-filter input[type="range"]::-webkit-slider-thumb {
+  background: #d39663;
+}
+
+.modo-oscuro .cardShop {
+  background-color: #151515;
+}
+
+.modo-oscuro .cardShop img {
+  filter: brightness(0.8);
+}
+.modo-oscuro .cardShop .titulo:hover {
+  color: #92c5d9;
+}
+
+.modo-oscuro .discount-badge {
+  background-color: #17b169;
+}
+
+.modo-oscuro .pagination .page-boton.active {
+  background-color: #444;
+}
+
+/* STORE LOCATOR */
+.modo-oscuro #banner-store {
+  filter: brightness(0.8);
+}
+
+.modo-oscuro #section1-store-locator h2,
+.modo-oscuro .store-locator-stores h1 {
+  color: #555;
+}
+
+.modo-oscuro #section1-store-locator,
+.modo-oscuro .store-locator-stores,
+.modo-oscuro .features-shipping,
+.modo-oscuro .store-locator-store-cards {
+  background-color: #151515;
+}
+
+.modo-oscuro .btn-store-locator {
+  background-color: #d39663 !important;
+  color: #fff !important;
+}
+
+.modo-oscuro .btn-store-locator:hover {
+  background-color: #d39663 !important;
+}
+
+.modo-oscuro .card-store-locator {
+  background-color: darkgray;
+}
+
+.modo-oscuro .card-store-locator h3,
+.modo-oscuro .card-store-locator p {
+  color: #000;
+}
+
+.modo-oscuro .card-store-locator b {
+  color: #d39663;
+}
+
+.modo-oscuro .location-button {
+  border-color: #d39663 !important;
+  color: #d39663 !important;
+}
+
+.modo-oscuro .location-button:hover {
+  background-color: #d39663 !important;
+  color: #121212 !important;
+}
+
+.modo-oscuro .store-locator-mapa,
+.modo-oscuro .container-store-locator,
+.modo-oscuro .div-btn-store {
+  filter: brightness(0.8);
+}
+.modo-oscuro .imagen-mapa-store-locator {
+  filter: none !important;
+}
+
+.modo-oscuro .feature-item-shipping {
+  background-color: #1c1c1c !important;
+}
+
+.modo-oscuro .feature-item-shipping h3 {
+  color: #f5f5f5 !important;
+}
+
+.modo-oscuro .section5-sl {
+  filter: brightness(0.8);
+}
+.modo-oscuro .icon-item img {
+  filter: brightness(0.8);
+}
+
+.modo-oscuro .icon-item img:hover {
+  opacity: 0.8;
+}
+
+.modo-oscuro .store-locator-store-card-content,
+.modo-oscuro .store-locator-store-card .cover,
+.modo-oscuro .five-icons-foot {
+  background-color: darkgray;
+  filter: brightness(0.8);
+}
+
+.modo-oscuro .store-locator-store-card-content p {
+  color: black !important;
+}
