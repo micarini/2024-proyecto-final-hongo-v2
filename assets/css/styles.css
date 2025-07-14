@@ -1550,7 +1550,6 @@ p {
 }
 
 .banner-blog-texto {
-  padding-left: 6rem;
   padding-top: 11rem;
 }
 
@@ -1658,7 +1657,7 @@ p {
   color: #888;
   font-weight: 300;
   grid-column: 1 / 3;
-  padding-left: 7rem;
+  padding-left: 2rem;
   padding-top: 1.2em;
   padding-bottom: 1.2em;
   border-bottom: 0.8px solid rgba(0, 0, 0, 0.1);
@@ -3150,7 +3149,7 @@ p {
   /*se agrega solo al ultimo p */
   content: "";
   display: block;
-  width: 250px;
+  width: 100%;
   height: 1px;
   background-color: #ccc;
   margin-bottom: 2em;
@@ -3339,98 +3338,79 @@ textarea:focus {
   color: #f3f4f6;
 }
 
-/*responsive product*/
-/*telefono*/
+/*RESPONSIVE PRODUCT MOBILE*/
 @media (max-width: 768px) {
   #gridProduct,
   #gridProduct2,
   .footer-container {
     grid-template-columns: 1fr;
   }
-
   .product-section {
     flex-direction: column;
   }
-
   .product-grid-fotos,
   .product-side {
     width: 100%;
   }
-
   .header-negro h4, .fa-heart, .menu{
     display: none;
   }
-
-.product-section{
+  .product-section{
     padding: 1.6em;
-}
-
-#gridProduct, .product-side{
+  }
+  #gridProduct, .product-side{
     margin-left: 0%;
     margin-bottom: 3em;
-}
-
- .breadcrumb-prod{ /*NO SE HACE*/
+  }
+  .breadcrumb-prod{ /*NO SE HACE*/
     text-align: left;
     align-items: left;
- }
-
- .footer-container, .textofooter {
+  }
+  .footer-container, .textofooter {
     justify-items: center;
     text-align: center;
     justify-content: center;
- }
-
+  }
 }
 
-/*ipad*/
+/*RESPONSIVE PRODUCT TABLET */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
- 
-#gridProduct, .product-side{   
-      width: 95vw;   
-      margin-left: 0%;
-      
-}
-
-.product-section {
+  #gridProduct, .product-side{   
+    width: 95vw;   
+    margin-left: 0%;
+  }
+  .product-section {
     flex-direction: column;
     padding: 2em;
   }
-
   .product-side {
     margin-top: 4em;
   }
-
- .breadcrumb-prod{ /*NO SE HACE*/
+  .breadcrumb-prod{ /*NO SE HACE*/
     text-align: left;
     align-items: left;
- }
-
+  }
  .grid-botones {
     justify-items: left;
     width: 30%;
  }
-
  .add-to-compare{
     display: none;
  }
-
  .quantity-buttons {
     margin-top: 0%;
     margin-bottom: 0%;
  }
-
  .related-products{
     margin-top: 3em;
  }
 }
 
-/* Esconde menú en móviles */
+/* ESCONDE EL MENÚ EN MOBILE */
 .menu2 {
   display: flex;
   gap: 15px;
 }
-
 .menu-toggle-negro {
   display: none;
   background: none;
@@ -3440,33 +3420,7 @@ textarea:focus {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .menu2 {
-    display: none;
-    flex-direction: column;
-    background: black;
-    padding: 1em;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    width: 200px;
-  }
-
-  .menu2.open {
-    display: flex;
-  }
-
-  .menu-toggle-negro {
-    display: block;
-  }
-
-  .soporte {
-    display: none;
-  }
-}
-
-/* General: escondé el botón en desktop */
-
+/* ESCONDE EL BOTON EN DESKTOP*/
 .menu{
    display: flex;
 }
@@ -3479,11 +3433,10 @@ textarea:focus {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .menu-toggle-blanco {
     display: block;
   }
-
   .menu {
     display: none;
     flex-direction: column;
@@ -3497,19 +3450,35 @@ textarea:focus {
     z-index: 999;
     text-align: center;
   }
-
   .menu ul {
     flex-direction: column;
   }
   .menu.open {
     display: flex;
   }
-
   .menu ul li {
     padding: 10px 0;
   }
-
   .symbols {
+    display: none;
+  }
+  .menu2 {
+    display: none;
+    flex-direction: column;
+    background: black;
+    padding: 1em;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 200px;
+  }
+  .menu2.open {
+    display: flex;
+  }
+  .menu-toggle-negro {
+    display: block;
+  }
+  .soporte {
     display: none;
   }
 }
@@ -3804,8 +3773,8 @@ textarea:focus {
     text-align: center;
   }
 }
-/* RESPONSIVE BLOG POST */ 
-@media (max-width: 768px) {
+/* RESPONSIVE BLOG POST MOBILE (hasta 913 para incluir surface pro 7 y ipad air)*/ 
+@media (max-width: 913px) {
   .container-bp {
     flex-direction: column;
     padding: 0;
@@ -3948,10 +3917,18 @@ textarea:focus {
     letter-spacing: 1px;
   }
 }
-/*RESPONSIVE BLOG*/
+/*RESPONSIVE BLOG POST TABLET*/
+@media (min-width: 768px) and (max-width: 1366px){
+  .container-bp {
+    padding: 0;
+    padding-top: 2em;
+  }
+}
+
+/*RESPONSIVE BLOG MOBILE*/
 @media (max-width: 768px) {
   header .header-blanco .logo-hongo img {
-    width: 80px;
+    width: 8em;
   }
   #banner-blog {
     height: 70vw;
@@ -4034,7 +4011,78 @@ textarea:focus {
     padding: 0;
   }
 }
-/*RESPONSIVE STORE LOCATOR*/
+/*RESPONSIVE BLOG TABLET (hasta 1366 para que incluya al ipad pro o tablets grandes)*/
+@media (min-width: 768px) and (max-width: 1366px) {
+  header .header-blanco .logo-hongo img {
+    width: 10em;
+  }
+  #banner-blog {
+    height: 40vw;
+  }
+  .container-blog, .sidebar, .search-form button, .post-contenido {
+    padding: 0;
+  }
+  .sidebar{
+    padding-top: 2em;
+  }
+  .post-video, .post-ytvideo, .post-htmlvideo {
+    width: 100%;
+    padding: 1em;
+  }
+  .post-video video, .post-htmlvideo video, .post-ytvideo iframe {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 2em auto;
+  }
+  .post-imagen img {
+    width: 100%;
+  }
+  .slider{
+    height: 20em;
+  }
+  .quote{
+    padding: 3em;
+    margin: 0;
+    margin-bottom: 2em;
+  }
+  .quote-text{
+    font-size: 1.5em;
+  }
+  .post-h2 {
+    font-size: 2em;
+  }
+  .meta {
+    font-size: 1em;
+  }
+  .gallery-post {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(1, 1fr) !important;
+    gap: 2em;
+    padding: 0;
+  }
+  .gallery-post img {
+    display: block;
+  }
+  .div2 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+  .div3 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  .div4 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  .div5 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+}
+/*RESPONSIVE STORE LOCATOR MOBILE*/
 @media (max-width: 768px) {
   .breadcrumb{
     text-align: left;
