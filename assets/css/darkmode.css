@@ -1,3 +1,64 @@
+#theme-toggle {
+  /* oculta el checkbox */
+  display: none;
+}
+
+.toggle-button:hover {
+  background: #d1d5db;
+}
+
+.toggle-button {
+  /* estilos del boton de modo oscuro */
+  width: 50px;
+  height: 50px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.4s;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.icon {
+  /* estilos de los iconos */
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  stroke: currentColor; /* usa el color del texto */
+  transition: 0.4s;
+}
+
+.moon {
+  /* oculta el icono de la luna por defecto */
+  opacity: 0;
+  transform: rotate(-180deg);
+}
+
+#theme-toggle:checked + .toggle-button {
+  /* cuando se activa el checkbox, cambia el botón y el fondo */
+  background: #374151;
+  transform: rotate(-180deg); /* rota el botón */
+}
+
+#theme-toggle:checked + .toggle-button .sun {
+  /* oculta el sol y muestra la luna */
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+#theme-toggle:checked + .toggle-button .moon {
+  opacity: 1;
+  transform: rotate(180deg);
+}
+
+#theme-toggle:checked ~ body {
+  /* cambia el fondo y el color del texto en modo oscuro */
+  background: #111827;
+  color: #f3f4f6;
+}
+
 .modo-oscuro {
   background-color: #121212 !important;
   color: #f5f5f5;

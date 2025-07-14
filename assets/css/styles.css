@@ -608,11 +608,16 @@ nav ul li a.active {
 }
 
 .slider-texto {
-  padding-top: 25em;
-  margin-right: 10em;
-  margin-left: 90em;
+  position: absolute;
+  top: 50%;
+  right: 8vw;
+  transform: translateY(-50%);
+  max-width: 500px;
+  box-sizing: border-box;
 }
-
+#slider{
+  position: relative;
+}
 #slider h2 {
   font-weight: 600;
   font-size: 65px;
@@ -2013,10 +2018,8 @@ p {
 .container-contact {
   min-height: 300px;
 }
-
 .section1-contact-h2 {
-  justify-content: center;
-  align-items: center;
+  max-width: 400px;
 }
 
 .card-container-contact {
@@ -3145,8 +3148,7 @@ p {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.related-posts-bp p:last-of-type::after {
-  /*se agrega solo al ultimo p */
+.related-posts-bp p:last-of-type::after {  /*se agrega solo al ultimo p */
   content: "";
   display: block;
   width: 100%;
@@ -3188,8 +3190,8 @@ p {
   margin-left: auto;
   align-self: flex-end;
   position: absolute;
-  right: 0; /* Aligns the button to the far right */
-  top: 0; /* Aligns it at the top */
+  right: 0; /* alinea el boton a la derecha */
+  top: 0; /* lo alinea en la parte superior */
   margin: 0;
 }
 
@@ -3275,67 +3277,6 @@ textarea:focus {
   padding: 15px;
   font-weight: 600;
   line-height: 42px;
-}
-
-#theme-toggle {
-  /* oculta el checkbox */
-  display: none;
-}
-
-.toggle-button:hover {
-  background: #d1d5db;
-}
-
-.toggle-button {
-  /* estilos del boton de modo oscuro */
-  width: 50px;
-  height: 50px;
-  background: #e5e7eb;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 0.4s;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.icon {
-  /* estilos de los iconos */
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  stroke: currentColor; /* usa el color del texto */
-  transition: 0.4s;
-}
-
-.moon {
-  /* oculta el icono de la luna por defecto */
-  opacity: 0;
-  transform: rotate(-180deg);
-}
-
-#theme-toggle:checked + .toggle-button {
-  /* cuando se activa el checkbox, cambia el botón y el fondo */
-  background: #374151;
-  transform: rotate(-180deg); /* rota el botón */
-}
-
-#theme-toggle:checked + .toggle-button .sun {
-  /* oculta el sol y muestra la luna */
-  opacity: 0;
-  transform: rotate(180deg);
-}
-
-#theme-toggle:checked + .toggle-button .moon {
-  opacity: 1;
-  transform: rotate(180deg);
-}
-
-#theme-toggle:checked ~ body {
-  /* cambia el fondo y el color del texto en modo oscuro */
-  background: #111827;
-  color: #f3f4f6;
 }
 
 /*RESPONSIVE PRODUCT MOBILE*/
@@ -3433,6 +3374,7 @@ textarea:focus {
   cursor: pointer;
 }
 
+/*RESPONSIVE MENU MOBILE Y TABLET*/
 @media (max-width: 1024px) {
   .menu-toggle-blanco {
     display: block;
@@ -3483,7 +3425,7 @@ textarea:focus {
   }
 }
 
-/* sidebar y botón responsive shop */
+/* EN RESPONSIVE SE CREA UN BOTON PARA LA SIDEBAR DE SHOP */
 .sidebar-toggle {
   display: none;
   background: white;
@@ -3496,10 +3438,11 @@ textarea:focus {
   width: max-content;
 }
 
+/*RESPONSIVE SHOP MOBILE*/
 @media (max-width: 768px) {
   .sidebar-toggle {
     display: block;
-     position: static; /* asegura que no sea fixed en mobile */
+    position: static; /* asegura que no sea fixed en mobile */
   }
   .sidebar-shop {
     display: none;
@@ -3544,6 +3487,7 @@ textarea:focus {
   }
 }
 
+/*RESPONSIVE SHOP TABLET*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #gridShop {
     grid-template-columns: repeat(3, 1fr);
@@ -3551,7 +3495,7 @@ textarea:focus {
   }
 }
 
-/* CONTACT MOBILE RESPONSIVE */
+/*RESPONSIVE CONTACT MOBILE*/
 @media (max-width: 768px) {
   .card-container-contact {
     grid-template-columns: 1fr;
@@ -3592,7 +3536,6 @@ textarea:focus {
     margin-left: 0;
     transform: none;
   }
-
   .sec3-contact {
     flex-direction: column;
     margin: 5% 0;
@@ -3603,7 +3546,6 @@ textarea:focus {
     width: 100%;
     text-align: center;
   }
-
   .sec4-contact {
     flex-direction: column;
     padding: 2em 0.5em;
@@ -3626,7 +3568,6 @@ textarea:focus {
     margin: 0 auto;
     padding: 0 0.5em;
   } 
-
  .sec5-contact {
     flex-direction: column;
     display: flex;
@@ -3649,7 +3590,6 @@ textarea:focus {
     padding-right: 1em;
     text-align: left;
   }
-
   .sec6-contact {
     flex-direction: column;
     display: flex;
@@ -3719,7 +3659,7 @@ textarea:focus {
     margin-bottom: 0;
   }
   .sec7-contact {
-       flex-direction: column;
+    flex-direction: column;
     display: flex;
     gap: 2em;
     align-items: center;
@@ -3773,8 +3713,8 @@ textarea:focus {
     text-align: center;
   }
 }
-/* RESPONSIVE BLOG POST MOBILE (hasta 913 para incluir surface pro 7 y ipad air)*/ 
-@media (max-width: 913px) {
+/* RESPONSIVE BLOG POST MOBILE (hasta 960 para incluir surface pro 7 y ipad air y que la sidebar no se corte)*/ 
+@media (max-width: 960px) {
   .container-bp {
     flex-direction: column;
     padding: 0;
@@ -4114,7 +4054,7 @@ textarea:focus {
     gap: 0px;
     padding: 1em;
   }
-.section5-sl {
+  .section5-sl {
     flex-direction: column;
     display: flex;
     gap: 0;
@@ -4166,7 +4106,7 @@ textarea:focus {
     padding: 4em;
   }
   .left-number-locator .p1 {
-     position: absolute;
+    position: absolute;
     top: 32%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -4254,3 +4194,4 @@ textarea:focus {
     padding-left: 0;
   }
 }
+/*RESPONSIVE STORE LOCATOR TABLET*/
