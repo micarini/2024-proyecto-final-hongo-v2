@@ -18,19 +18,38 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // MENÚS MOBILE
-    const toggleNegro = document.querySelector(".menu-toggle-negro");
+      const toggleNegro = document.querySelector(".menu-toggle-negro");
     const menunegro = document.querySelector(".menu2");
-    if (toggleNegro && menunegro) {
-        toggleNegro.addEventListener("click", () => {
-            menunegro.classList.toggle("open");
-        });
-    }
     const toggleBlanco = document.querySelector(".menu-toggle-blanco");
     const menublanco = document.querySelector(".menu");
-    if (toggleBlanco && menublanco) {
+
+    if (toggleNegro && menunegro && toggleBlanco && menublanco) {
+        toggleNegro.addEventListener("click", () => {
+            menunegro.classList.toggle("open");
+            //cierra el menú blanco si está abierto
+            if (menublanco.classList.contains("open")) {
+                menublanco.classList.remove("open");
+            }
+        });
         toggleBlanco.addEventListener("click", () => {
             menublanco.classList.toggle("open");
+            //cierra el menú negro si está abierto
+            if (menunegro.classList.contains("open")) {
+                menunegro.classList.remove("open");
+            }
         });
+    } else {
+        //fallback para casos donde solo uno existe
+        if (toggleNegro && menunegro) {
+            toggleNegro.addEventListener("click", () => {
+                menunegro.classList.toggle("open");
+            });
+        }
+        if (toggleBlanco && menublanco) {
+            toggleBlanco.addEventListener("click", () => {
+                menublanco.classList.toggle("open");
+            });
+        }
     }
 
     // MENÚ ACTIVO
