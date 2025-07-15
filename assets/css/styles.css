@@ -4076,8 +4076,6 @@ textarea:focus {
   }
   .art1-sect5 {
     width: 100vw;
-    padding: 3em 1em 2.5em 1em;
-    align-items: center;
     text-align: center;
   }
   .art1-sect5 p {
@@ -4104,39 +4102,24 @@ textarea:focus {
   .art3-sect5 {
     order: 3;
     width: 100%;
-    text-align: center;
+    gap: 0;
   }
    .store-locator-mapa {
     height: 300px;
-    padding-top: 2rem;
-  }
-  .imagen-mapa-store-locator {
-    background-size: cover;
-    padding: 20px;
   }
   .imagen-mapa-store-locator p {
     width: 90%;
-    text-align: center;
-  }
-  .btn-store-locator {
-    width: 40px;
-    height: 40px;
   }
   .container-store-locator {
     flex-direction: column;
     display: flex;
   }
   .store-locator-stores {
-     display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    position: relative;
     min-height: 300px;
     padding: 2.5em 1em 2em 1em;
-    gap: 0;
-    margin: 0;
   }
   .left-number-locator .p1 {
     left: 60%;
@@ -4186,41 +4169,47 @@ textarea:focus {
   }
   .icon-grid {
     flex-direction: column;
-    display: flex;
     gap: 2em;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
   }
   .icon-item {
     width: 80px;
     margin: 0 auto;
   }
-  .icon-item img {
-    width: 100%;
-    height: auto;
-  }
-  .features-shipping {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3em;
-    padding: 2.5em 0.5em;
-  }
   .feature-item-shipping {
     width: 100%;
-  }
-  .feature-item-shipping i {
-    font-size: 3em;
-    margin-bottom: 0.5em;
-  }
-  .feature-item-shipping h3 {
-    font-size: 1.2em;
-    font-weight: 600;
-    margin-bottom: 0.5em;
   }
   .banner-texto{
     padding-left: 0;
   }
+  .store-locator-store-cards {
+    padding: 2em 0.5em;
+  }
+  .store-locator-store-card {
+   flex-direction: column;
+   height: auto;
+  }
+  .store-locator-store-card img{
+    width: 100%;
+  }
+  .store-locator-store-card-content{
+    width: 100%;
+    gap: 1em;
+  }
+ .store-locator-store-card-content p{
+    font-size: 1.5em;
+ }
+  .sale-badge {
+    margin-bottom: 1em;
+  }
+  .store-locator-store-card-content h3 {
+    font-weight: 600;
+  }
+  .location-button {
+    margin-top: 1em;
+  }
+  .icon-grid{
+    margin: 4em;
+  }
 }
+
 /*RESPONSIVE STORE LOCATOR TABLET*/
