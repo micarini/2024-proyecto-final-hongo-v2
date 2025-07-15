@@ -230,18 +230,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // FADE IN SECTION2 HOME
+    
     if (document.getElementById("section2")) {
-        const section2 = document.getElementById("section2");
-        function fadeInOnScroll() {
-            const sectionPosition = section2.getBoundingClientRect().top;
-            const screenPosition = window.innerHeight / 1.3;
-            if (sectionPosition < screenPosition) {
-                section2.classList.add("visible");
+    const section2 = document.getElementById("section2"); //selecciona la sección 2
+
+    const observer = new IntersectionObserver((entries, observer) => { //creo una instancia de IntersectionObserver que sirve para detectar cuando un elemento entra en el viewport
+        entries.forEach(entry => { //este forEach sirve para recorrer cada entrada del observer
+            if (entry.isIntersecting) { //el isIntersecting es true cuando el elemento está visible en el viewport
+                section2.classList.add("visible"); //agrega la clase visible a section2 para que se muestre
+                observer.unobserve(entry.target); // deja de observar una vez que se muestra
             }
-        }
-        window.addEventListener("scroll", fadeInOnScroll);
-        fadeInOnScroll();
+        });
+    }, {
+        threshold: 0.2 // se activa cuando al menos el 20% de section2 está visible
+    });
+
+    observer.observe(section2); 
     }
+
 
     // GALERÍA 1 HOME
     if (document.getElementById("section3")) {

@@ -636,19 +636,13 @@ nav ul li a.active {
 }
 
 #slider h5::before {
-  content: " ";
-  /* Pseudo-elemento vacío para la línea */
+  content: " "; /* Pseudo-elemento vacío para la línea */
   position: absolute;
-  left: 3px;
-  /* Ajusta la distancia que deseas que esté del texto */
-  top: 50%;
-  /* Alinea la línea verticalmente con el texto */
-  transform: translateY(-50%);
-  /* Centra la línea */
-  width: 20px;
-  /* Largo de la línea */
-  height: 0.75px;
-  /* Grosor de la línea */
+  left: 3px; /* Ajusta la distancia que deseas que esté del texto */
+  top: 50%; /* Alinea la línea verticalmente con el texto */
+  transform: translateY(-50%); /* Centra la línea */
+  width: 20px; /* Largo de la línea */
+  height: 0.75px; /* Grosor de la línea */
   background-color: #000;
 }
 
@@ -656,6 +650,7 @@ nav ul li a.active {
   font-size: 14px;
   margin-bottom: 30px;
   line-height: 1.3em;
+  max-width: 350px;
 }
 
 #slider .boton {
@@ -1029,10 +1024,6 @@ nav ul li a.active {
   grid-column: span 2; /*Hace que el texto ocupe el ancho de las 2 columnas */
   padding: 0.7rem; /* Espacio interno para el rectángulo */
   margin-top: 3rem;
-}
-
-.instagram-decor p {
-  font-size: 1rem;
 }
 
 #section6 img {
@@ -4020,6 +4011,30 @@ textarea:focus {
   .div5 {
     grid-column-start: 1;
     grid-row-start: 3;
+  }
+}
+/*RESPONSIVE HOME TABLET*/
+@media (min-width: 768px) and (max-width: 1366px){
+  .gallery img {
+    max-width: 10em;
+  }
+  .instagram-decor {
+    transform: translate(0%, -40%);
+  }
+  .instagram-decor p {
+    font-size: 0.85rem;
+  }
+  #slider {
+    height: 45vh; 
+  }
+  #slider h2 {
+    font-size: 7em; 
+  }
+  #slider p {
+    font-size: 1rem;
+  }
+  #section3 h2{
+    font-size: 11em;
   }
 }
 /*RESPONSIVE STORE LOCATOR MOBILE*/
