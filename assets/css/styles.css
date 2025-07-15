@@ -1851,7 +1851,6 @@ p {
 }
 
 .art2-sect5 img {
-  height: 100vh;
   width: 100%;
 }
 
@@ -4076,8 +4075,26 @@ textarea:focus {
     max-height: unset;
   }
   .art1-sect5 {
-    order: 1;
-    width: 100%;
+    width: 100vw;
+    padding: 3em 1em 2.5em 1em;
+    align-items: center;
+    text-align: center;
+  }
+  .art1-sect5 p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+  }
+  .art1-sect5 h4 {
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+    letter-spacing: 0.5px;
+  }
+   .store-btn {
+    font-size: 1.1em;
+    padding: 0.9em 2em;
+    width: auto;
+    margin: 0 auto;
+    display: block;
     text-align: center;
   }
   .art2-sect5 {
@@ -4114,51 +4131,48 @@ textarea:focus {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #fff;
     text-align: center;
     position: relative;
-    width: 100%;
-    padding: 4em;
+    min-height: 300px;
+    padding: 2.5em 1em 2em 1em;
+    gap: 0;
+    margin: 0;
   }
   .left-number-locator .p1 {
-    position: absolute;
-    top: 32%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1em;
-    font-weight: 700;
-    color: #232323;
+    left: 60%;
+    transform: translate(-60%, -120%);
     z-index: 2;
-    background: transparent;
     margin: 0;
     width: 100%;
     text-align: center;
-    letter-spacing: 1px;
   }
   .left-number-locator {
     position: relative;
     width: 100%;
-    margin: 0;
-    border: none;
+    margin: 0 auto;
     padding: 0;
     min-height: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none
   }
   .left-number-locator h1 {
-    font-size: 3.5em;
-    color: #e0e0e0;
-    font-weight: 700;
-    line-height: 1;
+    margin: 0 auto;
     z-index: 1;
     text-align: center;
+    position: relative;
+     font-size: 10em;
+     transform: translate(-40%, -20%);
   }
   .right-text-locator p {
-    font-size: 1.1em;
-    color: #232323;
-    font-weight: 400;
     margin: 0;
     line-height: 1.3;
     text-align: center;
     padding: 0 0.2em;
+    font-weight: 400;
+    font-size: 1.8em;
   }
   .right-text-locator {
     width: 100%;
