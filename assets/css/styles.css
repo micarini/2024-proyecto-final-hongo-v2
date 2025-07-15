@@ -670,6 +670,7 @@ nav ul li a.active {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 18px;
+  max-height: 450px;
 }
 
 #img1-section1 {
@@ -729,24 +730,18 @@ nav ul li a.active {
   opacity: 0;
   transform: translateY(50px); /* Se inicia desplazado hacia abajo */
   transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-#section2.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-#section2 {
   margin: 4em;
   grid-gap: 18px;
   margin-bottom: 10em;
 }
-
+#section2.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 #section2 div {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-
 #section2 article {
   width: 100%;
   min-height: 150px;
@@ -757,7 +752,6 @@ nav ul li a.active {
   transition: transform 0.3s ease-in-out;
   overflow: hidden;
 }
-
 #section2 article h5 {
   position: absolute;
   bottom: 20px;
@@ -767,7 +761,6 @@ nav ul li a.active {
   transition: all 0.3s ease;
   z-index: 1;
 }
-
 #section2 article .items-count {
   bottom: 10px;
   left: 20px;
@@ -777,20 +770,16 @@ nav ul li a.active {
   transition: all 0.3s ease;
   z-index: 1;
 }
-
 #section2 a {
   color: inherit;
 }
-
 /* Hover para el efecto */
 #section2 article:hover h5 {
   bottom: 40px; /* Sube el texto principal */
 }
-
 #section2 article:hover .items-count {
   opacity: 1; /* Se hace visible */
 }
-
 #section2 h4 {
   grid-column: span 3; /* Hace que el título abarque las 3 columnas*/
   margin-bottom: 20px;
@@ -4012,13 +4001,13 @@ textarea:focus {
     grid-row-start: 3;
   }
 }
-/*RESPONSIVE HOME TABLET*/
-@media (min-width: 768px) and (max-width: 1366px){
+/*RESPONSIVE HOME TABLET GRANDE*/
+@media (min-width: 768px) and (max-width: 1025px){
   .gallery img {
-    max-width: 10em;
+    max-width: 8em;
   }
   .instagram-decor {
-    transform: translate(0%, -40%);
+    transform: translate(0%, -60%);
   }
   .instagram-decor p {
     font-size: 0.85rem;
@@ -4032,10 +4021,57 @@ textarea:focus {
   #slider p {
     font-size: 1rem;
   }
-  #section3 h2{
-    font-size: 11em;
+  .slider-texto {
+    right: 1vw;
+    max-width: 400px;
   }
 }
+@media (max-width: 769px) { /*IPAD MINI*/
+  #slider {
+    height: 45vh;
+  }
+  #slider h2 {
+    font-size: 4em;
+  }
+  #slider p {
+    font-size: 0.8rem;
+  }
+  .slider-texto {
+    right: 6vw;
+    max-width: 300px;
+  }
+   #section2 {
+    justify-items: center;
+  }
+
+  #section2 h4 {
+    grid-column: span 2;
+    font-size: 1.1rem;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+  }
+
+  #section2 div {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  #section2 article h5 {
+    font-size: 0.9rem;
+    bottom: 15px;
+    left: 15px;
+  }
+
+  #section2 article .items-count {
+    font-size: 0.8rem;
+    bottom: 5px;
+    left: 15px;
+  }
+}
+
 /*RESPONSIVE STORE LOCATOR MOBILE*/
 @media (max-width: 768px) {
   .breadcrumb{
