@@ -30,14 +30,11 @@ body {
 }
 
 /*TIPOGRAFIA*/
-h1,
-h2,
-h3 {
+h1,h2,h3 {
   letter-spacing: 1.5px;
   line-height: 1.2;
   color: #242424;
 }
-
 p {
   font-size: 1.6rem;
   line-height: 1.8;
@@ -630,19 +627,18 @@ nav ul li a.active {
   font-weight: 500;
   font-size: 12px;
   margin-bottom: 15px;
-  display: inline-block;
-  /* Para que solo el texto esté afectado */
+  display: inline-block;   /* para que solo el texto esté afectado */
   padding-left: 30px;
 }
 
 #slider h5::before {
-  content: " "; /* Pseudo-elemento vacío para la línea */
+  content: " "; /* pseudo-elemento vacío para la línea */
   position: absolute;
-  left: 3px; /* Ajusta la distancia que deseas que esté del texto */
-  top: 50%; /* Alinea la línea verticalmente con el texto */
-  transform: translateY(-50%); /* Centra la línea */
-  width: 20px; /* Largo de la línea */
-  height: 0.75px; /* Grosor de la línea */
+  left: 3px; 
+  top: 50%; 
+  transform: translateY(-50%); /* centra la línea */
+  width: 20px;
+  height: 0.75px; /*grosor de la línea */
   background-color: #000;
 }
 
@@ -665,7 +661,6 @@ nav ul li a.active {
 }
 
 /* SECTION 1 HOME*/
-
 #section1 {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -773,7 +768,7 @@ nav ul li a.active {
 #section2 a {
   color: inherit;
 }
-/* Hover para el efecto */
+
 #section2 article:hover h5 {
   bottom: 40px; /* Sube el texto principal */
 }
@@ -869,15 +864,12 @@ nav ul li a.active {
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 0.9rem;
-  padding-top: 6rem; /*el espacio de arriba del shop by category*/
-  padding-bottom: 2rem; /*el espacio de abajo del shop by category*/
-  text-align: center;
+  padding-top: 6rem; 
+  padding-bottom: 2rem; 
 }
 
 /*css de la card*/
-#grid1,
-#grid2,
-#grid3 {
+#grid1,#grid2,#grid3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 items per row */
   gap: 15px;
@@ -885,18 +877,14 @@ nav ul li a.active {
   background-color: #ececec;
 }
 
-.card1,
-.card2,
-.card3 {
+.card1,.card2,.card3 {
   padding: 15px;
   background-color: transparent;
   border: none;
   box-shadow: none;
 }
 
-.card1 img,
-.card2 img,
-.card3 img {
+.card1 img,.card2 img,.card3 img {
   width: 100%;
   height: auto;
   margin: 0 auto 10px;
@@ -1192,24 +1180,31 @@ footer h5 {
   padding: 0;
   margin: 0;
 }
-
+.filter-section li,
 .categories li,
 .archive li {
   font-size: 1.2em;
   color: #808080;
-  padding: 0.5em 0;
+  gap: 0.5em;
 }
 
 .categories li:last-child,
 .archive li:last-child {
   border-bottom: none;
 }
-
 .categories li:hover,
 .archive li:hover {
   color: #d39663;
 }
-
+.num-categories {
+  min-width: 3em; 
+  text-align: right;
+  display: inline-block;
+  color: #808080;
+  font-size: 1em;
+  font-variant-numeric: tabular-nums; /* números alineados */
+  letter-spacing: 0.02em;
+}
 .categories .num-categories,
 .archive .num-categories,
 .filter-section .num-categories {
@@ -1657,27 +1652,12 @@ p {
   color: #333;
 }
 
-.content-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* dos columnas */
-  gap: 2rem;
-  align-items: start;
-}
-
-.article1-section1 {
-  position: relative;
-}
-
 .article1-section1 h4 {
   font-size: 0.7rem;
   letter-spacing: 1px;
   margin: 0;
   padding-top: 4rem;
   padding-left: 7rem;
-  position: relative;
-  display: flex;
-  align-items: center;
   gap: 10px;
 }
 
@@ -1944,17 +1924,12 @@ p {
 }
 
 .features-shipping {
-  height: 100%;
   padding: 50px 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 2rem;
 }
 
 .feature-item-shipping {
   width: 30%;
-  text-align: center;
   padding: 3em;
   box-sizing: border-box;
   margin-bottom: 0;
@@ -2149,11 +2124,9 @@ p {
 
 .article-img {
   flex: 1 1 30%;
-  text-align: center;
 }
 
 .article-img img {
-  width: 100%;
   min-height: 100%;
 }
 
@@ -2520,8 +2493,6 @@ p {
 
 .input-field,
 .textarea-field {
-  display: block;
-  width: 100%;
   margin-bottom: 10px;
   padding: 5px;
   border: 1px solid #ccc;
@@ -2531,15 +2502,12 @@ p {
   height: 100px;
 }
 
-/* Review section container */
 .prod-panel form {
   max-width: 600px;
   margin-top: 10px;
 }
 
-/* Name and Email fields in the same row */
 .prod-panel form label {
-  display: block;
   margin: 10px 0 5px;
 }
 
@@ -2547,7 +2515,6 @@ p {
   display: flex;
   gap: 10px;
 }
-
 .review-fields .input-field {
   flex: 1;
   padding: 8px;
@@ -2555,14 +2522,11 @@ p {
   width: 100%;
 }
 
-/* Your rating section */
 .stars {
   margin: 10px 0;
-  display: flex;
   gap: 5px;
 }
 
-/* Review textarea */
 .textarea-field {
   width: 100%;
   height: 120px;
@@ -2672,7 +2636,6 @@ p {
 }
 
 .container-shop {
-  display: flex;
   gap: 5em;
   padding-top: 10em;
 }
@@ -2697,6 +2660,7 @@ p {
   font-weight: bold;
   color: #333;
   margin-bottom: 2em;
+  text-align: left;
 }
 
 .filter-section ul {
@@ -2721,9 +2685,6 @@ p {
 }
 
 .filter-section li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-size: 1.2em;
   color: #808080;
 }
@@ -2805,13 +2766,6 @@ p {
   opacity: 0;
 }
 
-/*.selected-filter::after {
-    content: " ✓";
-    font-size: 0.9em;
-    color: #555;
-    margin-left: 5px;
-}*/
-
 .cardShop {
   position: relative;
   width: 27em;
@@ -2830,9 +2784,6 @@ p {
 }
 
 .pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   margin-top: 20px;
 }
@@ -2944,8 +2895,6 @@ p {
 }
 
 .content-wrapper {
-  display: flex;
-  align-items: flex-start;
   max-width: 1100px;
   margin: auto;
 }
@@ -3180,10 +3129,6 @@ p {
 }
 
 .author-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
   gap: 0.2em;
 }
 
@@ -3543,25 +3488,17 @@ textarea:focus {
   }
   .slider-sec4-contact {
     width: 100%;
-    max-width: 100vw;
     margin: 0 auto;
     padding: 0 0.5em;
   } 
  .sec5-contact {
-    flex-direction: column;
-    display: flex;
     gap: 2em;
+    flex-direction: column;
     align-items: stretch;
     width: 100vw;
-    max-width: 100vw;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
   }
   .sec5-contact p {
     width: 100vw;
-    max-width: 100vw;
     margin-left: 0;
     margin-right: 0;
     box-sizing: border-box;
