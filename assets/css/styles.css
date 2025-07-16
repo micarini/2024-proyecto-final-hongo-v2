@@ -727,11 +727,11 @@ nav ul li a.active {
   transition: opacity 1s ease-out, transform 1s ease-out;
   margin: 4em;
   grid-gap: 18px;
-  margin-bottom: 10em;
+  margin-bottom: 25em;
 }
 #section2.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(150px);
 }
 #section2 div {
   grid-template-columns: repeat(3, 1fr);
@@ -760,7 +760,7 @@ nav ul li a.active {
   bottom: 10px;
   left: 20px;
   font-size: 0.9rem;
-  color: #555;
+  color: gray;
   opacity: 0;
   transition: all 0.3s ease;
   z-index: 1;
@@ -768,7 +768,6 @@ nav ul li a.active {
 #section2 a {
   color: inherit;
 }
-
 #section2 article:hover h5 {
   bottom: 40px; /* Sube el texto principal */
 }
@@ -3939,7 +3938,7 @@ textarea:focus {
   }
 }
 /*RESPONSIVE HOME TABLET GRANDE*/
-@media (min-width: 768px) and (max-width: 1025px){
+@media (min-width: 913px) and (max-width: 1025px){
   .gallery img {
     max-width: 8em;
   }
@@ -3963,7 +3962,7 @@ textarea:focus {
     max-width: 400px;
   }
 }
-@media (max-width: 769px) { /*IPAD MINI*/
+@media (max-width: 769px) { /*IPAD MINI Y AIR*/
   #slider {
     height: 45vh;
   }
@@ -3980,7 +3979,6 @@ textarea:focus {
    #section2 {
     justify-items: center;
   }
-
   #section2 h4 {
     grid-column: span 2;
     font-size: 1.1rem;
@@ -3988,24 +3986,24 @@ textarea:focus {
     padding-top: 3rem;
     padding-bottom: 1.5rem;
   }
-
   #section2 div {
     grid-column: span 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
   }
-
   #section2 article h5 {
     font-size: 0.9rem;
-    bottom: 15px;
-    left: 15px;
   }
-
   #section2 article .items-count {
-    font-size: 0.8rem;
-    bottom: 5px;
-    left: 15px;
+    font-size: 0.7rem;
+  }
+  #section3 h2{
+    font-size: 8em;
+  }
+  #grid1, #grid2, #grid3, #grid4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
