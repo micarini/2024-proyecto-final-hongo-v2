@@ -364,7 +364,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (document.getElementById("section5")) {
         const seccion5 = document.querySelector("#section5");
         let h4_seccion5 = document.createElement("h4");
-        h4_seccion5.textContent = "NEW PRODUCTS";
+        h4_seccion5.textContent = "- NEW PRODUCTS -";
         seccion5.appendChild(h4_seccion5);
         let grid4 = document.createElement("div");
         grid4.setAttribute("id", "grid4");

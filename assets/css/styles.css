@@ -3409,7 +3409,6 @@ textarea:focus {
     height: 2em;
   }
 }
-
 /*RESPONSIVE SHOP TABLET*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #gridShop {
@@ -3417,7 +3416,6 @@ textarea:focus {
     gap: 24px;
   }
 }
-
 /*RESPONSIVE CONTACT MOBILE*/
 @media (max-width: 768px) {
   .card-container-contact {
@@ -3586,7 +3584,7 @@ textarea:focus {
     text-align: center;
   }
   .sec7-contact article {
-     width: 100%;
+    width: 100%;
     max-width: 100vw;
     margin: 0 0 1.5em 0;
     padding: 0;
@@ -3735,9 +3733,7 @@ textarea:focus {
     padding: 0.8em 2em;
     letter-spacing: 1px;
   }
-  .comment1-bp,
-  .comment2-bp,
-  .comment3-bp {
+  .comment1-bp, .comment2-bp, .comment3-bp {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -3779,23 +3775,21 @@ textarea:focus {
     padding-top: 2em;
   }
 }
-
 /*RESPONSIVE BLOG MOBILE*/
 @media (max-width: 768px) {
   header .header-blanco .logo-hongo img {
     width: 8em;
   }
-  #banner-blog {
+  #banner-blog, #banner-contact, #banner-shop, #banner-store {
     height: 70vw;
-    padding: 0;
   }
-  .banner-blog-texto {
+  .banner-blog-texto, .banner-contact-texto, .banner-texto {
     padding: 15em 1em 5em 1em;
   }
-  .banner-blog-texto h2 {
+  .banner-blog-texto h2, .banner-contact-texto h2, .banner-texto h2 {
     font-size: 2.3em;
   }
-  .banner-blog-texto h4 {
+  .banner-blog-texto h4, .banner-contact-texto h4, .banner-texto h4 {
     font-size: 1.3em;
   }
   .breadcrumb{
@@ -3961,8 +3955,12 @@ textarea:focus {
     right: 1vw;
     max-width: 400px;
   }
+  #section2 article h5 {
+    font-size: 0.9rem;
+    padding: 0.5em 0;
+  }
 }
-@media (max-width: 769px) { /*IPAD MINI Y AIR*/
+@media (max-width: 769px) { /*IPAD MINI*/
   #slider {
     height: 45vh;
   }
@@ -3976,7 +3974,7 @@ textarea:focus {
     right: 6vw;
     max-width: 300px;
   }
-   #section2 {
+  #section2 {
     justify-items: center;
   }
   #section2 h4 {
@@ -3994,19 +3992,115 @@ textarea:focus {
   }
   #section2 article h5 {
     font-size: 0.9rem;
+    padding: 0.5em 0;
   }
   #section2 article .items-count {
+    opacity: 1;
     font-size: 0.7rem;
   }
   #section3 h2{
     font-size: 8em;
   }
   #grid1, #grid2, #grid3, #grid4 {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
+/*RESPONSIVE HOME MOBILE*/
+@media (max-width: 767px) {
+  #slider {
+    height: 55vh;
+  }
+  #slider h2 {
+    font-size: 3.8em;
+  }
+  #slider p {
+    font-size: 0.8rem;
+  }
+  .slider-texto {
+    text-align: center;
+    max-width: 250px;
+    position: static;
+    transform: translateY(35%);
+    margin: 0 auto;
+  }
+  #slider h5 {
+    padding-left: 0;
+    text-align: center;
+    display: block;
+  }
+  #slider h5::before {
+    display: none;
+  }
+  #section1, #section4 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em; 
+  }
+  #section1 article {
+    width: 400px;
+    margin: 0 auto;
+  }
+  #section1 article:nth-child(2) {
+    height: 200px;
+  }
+  #section1 article:not(:nth-child(2)) {
+    min-height: 400px;
+  }
+  #section1 {
+    margin-bottom: 100em;
+  }
+  #section2 {
+    margin-bottom: 30em;
+    justify-items: center;
+  }
+  #section2 h4, #section5 h4 {
+    grid-column: span 1;
+    font-size: 1.1rem;
+  }
+  #section2 .contenedor-centrado {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  #section2 article .items-count {
+    opacity: 1;
+  }
+  #section3 h2 {
+    opacity: 0;
+    font-size: 1em;
+  }
+  .button-sec3-container {
+    flex-direction: column;
+  }
+  #grid1, #grid2, #grid3, #grid4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2px;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+  #section6 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+  #section6 img {
+    width: 10vh;
+  }
+  .instagram-decor {
+    text-align: center;
+    font-weight: 600;
+    padding: 0.7em 8em;
+    transform: translate(0%, 60%);
+  }
+}
 /*RESPONSIVE STORE LOCATOR MOBILE*/
 @media (max-width: 768px) {
   .breadcrumb{
