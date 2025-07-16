@@ -382,15 +382,11 @@ document.addEventListener("DOMContentLoaded", function () {
         for (let i = 0; i < productos4.length; i++) {
             let card4 = document.createElement("div");
             card4.setAttribute("class", "card4");
-            let titulo = document.createElement("h3");
-            titulo.setAttribute("class", "titulo");
-            titulo.textContent = productos4[i].titulo;
+            let cardImage = document.createElement("div");
+            cardImage.className = "card-image";
             let img = document.createElement("img");
             img.setAttribute("src", productos4[i].img);
             img.setAttribute("class", "foto");
-            let precio = document.createElement("p");
-            precio.setAttribute("class", "precio");
-            precio.textContent = productos4[i].precio;
             let iconContainer = document.createElement("div");
             iconContainer.className = "card-icons";
             let iconCart = document.createElement("i");
@@ -405,10 +401,17 @@ document.addEventListener("DOMContentLoaded", function () {
             iconContainer.appendChild(iconCart);
             iconContainer.appendChild(iconHeart);
             iconContainer.appendChild(iconEye);
-            card4.appendChild(img);
+            cardImage.appendChild(img);
+            card4.appendChild(cardImage);
+            card4.appendChild(iconContainer);
+            let titulo = document.createElement("h3");
+            titulo.setAttribute("class", "titulo");
+            titulo.textContent = productos4[i].titulo;
+            let precio = document.createElement("p");
+            precio.setAttribute("class", "precio");
+            precio.textContent = productos4[i].precio;
             card4.appendChild(titulo);
             card4.appendChild(precio);
-            card4.appendChild(iconContainer);
             grid4.appendChild(card4);
             img.addEventListener("mouseover", function () {
                 img.setAttribute("src", productos4[i].imgHover);

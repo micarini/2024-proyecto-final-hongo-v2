@@ -868,7 +868,7 @@ nav ul li a.active {
 }
 
 /*css de la card*/
-#grid1,#grid2,#grid3 {
+#grid1, #grid2, #grid3, #grid4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 items per row */
   gap: 15px;
@@ -876,14 +876,14 @@ nav ul li a.active {
   background-color: #ececec;
 }
 
-.card1,.card2,.card3 {
+.card1, .card2, .card3, .card4 {
   padding: 15px;
   background-color: transparent;
   border: none;
   box-shadow: none;
 }
 
-.card1 img,.card2 img,.card3 img {
+.card1 img, .card2 img, .card3 img, .card4 img {
   width: 100%;
   height: auto;
   margin: 0 auto 10px;
@@ -896,7 +896,6 @@ nav ul li a.active {
   font-weight: 500;
   letter-spacing: 0px;
 }
-
 .precio {
   font-size: 13px;
   font-weight: 300;
@@ -904,10 +903,17 @@ nav ul li a.active {
   margin-top: 5px;
 }
 
-.h4_seccion3 {
+.h4_seccion5 {
+  text-align: center;
   font-weight: 600;
   margin-bottom: 20px;
 }
+
+.card, .card4 {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+} 
 
 .card-icons {
   position: absolute;
@@ -919,7 +925,17 @@ nav ul li a.active {
   gap: 10px;
 }
 
-.card:hover .card-icons {
+.card4 .card-icons {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: none;
+  transition: opacity 0.3s ease;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card:hover .card-icons, .card4:hover .card-icons {
   display: flex;
 }
 
@@ -951,39 +967,6 @@ nav ul li a.active {
 .card-image:hover img {
   filter: brightness(80%);
   transition: all 0.3s ease;
-}
-
-.card {
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-}
-
-#grid4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
-  gap: 3px;
-  padding: 0 15px 90px;
-}
-
-.card4 {
-  padding: 15px;
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-.card4 img {
-  width: 100%;
-  height: auto;
-  margin: 0 auto 10px;
-  border-radius: 10px;
-}
-
-.h4_seccion5 {
-  text-align: center;
-  font-weight: 600;
-  margin-bottom: 20px;
 }
 
 #section6 {
@@ -3931,36 +3914,8 @@ textarea:focus {
     grid-row-start: 3;
   }
 }
-/*RESPONSIVE HOME TABLET GRANDE*/
-@media (min-width: 913px) and (max-width: 1025px){
-  .gallery img {
-    max-width: 8em;
-  }
-  .instagram-decor {
-    transform: translate(0%, -60%);
-  }
-  .instagram-decor p {
-    font-size: 0.85rem;
-  }
-  #slider {
-    height: 45vh; 
-  }
-  #slider h2 {
-    font-size: 7em; 
-  }
-  #slider p {
-    font-size: 1rem;
-  }
-  .slider-texto {
-    right: 1vw;
-    max-width: 400px;
-  }
-  #section2 article h5 {
-    font-size: 0.9rem;
-    padding: 0.5em 0;
-  }
-}
-@media (max-width: 769px) { /*IPAD MINI*/
+
+@media (min-width: 768px) and (max-width: 913px) { /*IPAD MINI hasta SURFACE PRO 7*/
   #slider {
     height: 45vh;
   }
@@ -3999,10 +3954,48 @@ textarea:focus {
     font-size: 0.7rem;
   }
   #section3 h2{
-    font-size: 8em;
+    font-size: 8em !important;
   }
   #grid1, #grid2, #grid3, #grid4 {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery img {
+    max-width: 8em;
+  }
+  .instagram-decor {
+    transform: translate(0%, -60%);
+  }
+  .instagram-decor p {
+    font-size: 0.85rem;
+  }
+}
+/*RESPONSIVE HOME TABLET GRANDE*/
+@media (min-width: 821px) and (max-width: 1025px){
+  .gallery img {
+    max-width: 8em;
+  }
+  .instagram-decor {
+    transform: translate(0%, -60%);
+  }
+  .instagram-decor p {
+    font-size: 0.85rem;
+  }
+  #slider {
+    height: 45vh; 
+  }
+  #slider h2 {
+    font-size: 7em; 
+  }
+  #slider p {
+    font-size: 1rem;
+  }
+  .slider-texto {
+    right: 1vw;
+    max-width: 400px;
+  }
+  #section2 article h5 {
+    font-size: 0.9rem;
+    padding: 0.5em 0;
   }
 }
 /*RESPONSIVE HOME MOBILE*/
@@ -4099,6 +4092,18 @@ textarea:focus {
     font-weight: 600;
     padding: 0.7em 8em;
     transform: translate(0%, 60%);
+  }
+  .card-icons, .card4 .card-icons {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    opacity: 1;
+    background: none;
+  }
+  .card:hover .card-icons  {
+    display: flex;
+    opacity: 1;
   }
 }
 /*RESPONSIVE STORE LOCATOR MOBILE*/
