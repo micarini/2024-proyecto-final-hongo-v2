@@ -638,7 +638,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const shopContainer = document.querySelector("#shop-container");
         let gridShop = document.createElement("div");
         gridShop.setAttribute("id", "gridShop");
-        shopContainer.appendChild(gridShop);
+        const pagination = shopContainer.querySelector('.pagination');
+        shopContainer.insertBefore(gridShop, pagination);
 
         let productosShop = [ 
         { titulo: "Zinnia Lamp", precioOriginal: "", precio: "£150.00", img: "assets/fotos/foto1-galeria2.webp", imgHover: "assets/fotos/foto1-galeria2-imghover.webp", color: ["yellow", "silver"], size: ["L", "M"], rating: "3" },
