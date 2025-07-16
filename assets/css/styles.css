@@ -982,11 +982,11 @@ nav ul li a.active {
 .instagram-decor {
   grid-column: span 2; /*Hace que el texto ocupe el ancho de las 2 columnas */
   padding: 0.7rem; /* Espacio interno para el rectángulo */
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 #section6 img {
-  width: 20vh;
+  width: 18vh;
   height: auto;
   margin: 1px;
 }
@@ -3970,18 +3970,18 @@ textarea:focus {
   }
 }
 /*RESPONSIVE HOME TABLET GRANDE*/
-@media (min-width: 821px) and (max-width: 1025px){
+@media (min-width: 1024px) and (max-width: 1200px){
   .gallery img {
-    max-width: 8em;
+    max-width: 14em;
   }
   .instagram-decor {
-    transform: translate(0%, -60%);
+    transform: translate(0%, -10%);
   }
   .instagram-decor p {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
   #slider {
-    height: 45vh; 
+    height: 55vh; 
   }
   #slider h2 {
     font-size: 7em; 
