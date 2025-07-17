@@ -3275,37 +3275,18 @@ textarea:focus {
 @media (max-width: 768px) {
   .card-container-contact {
     grid-template-columns: 1fr;
-    gap: 2em;
     padding: 2em 0 6em 0;
   }
   .card-contact {
-    position: relative;
     width: 95vw;
-    max-width: 400px;
-    margin: 0 auto;
     height: auto;
-    min-height: unset;
-    overflow: visible;
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
   }
   .card-image-contact {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
     position: static;
-    top: unset;
-    left: unset;
-    z-index: unset;
   }
   .card-info-contact {
     height: 250px;
     width: 90%;
-    background: #fff;
     padding: 3em;
   }
   .country-data-contact {
@@ -3347,15 +3328,15 @@ textarea:focus {
     flex-direction: column;
     align-items: stretch;
     width: 100vw;
+    margin: 0;
   }
   .sec5-contact p {
     width: 100vw;
-    margin-left: 0;
-    margin-right: 0;
+    padding-top: 3em;
     box-sizing: border-box;
     padding-left: 1em;
-    padding-right: 1em;
     text-align: left;
+    padding-right: 2em;
   }
   .sec6-contact {
     flex-direction: column;
@@ -3385,24 +3366,13 @@ textarea:focus {
   }
   .article-img,.article-item,.contact-form {
     width: 100%;
-    max-width: 100vw;
-    margin: 0 auto 1.5em auto;
-    padding: 0;
-    box-sizing: border-box;
-    display: block;
   }
   .article-img img,.article-item img {
-    width: 100%;
     height: auto;
-    object-fit: cover;
     display: block;
   }
   .contact-form {
-    background: #232323;
-    color: #fff;
     padding: 2em 1em;
-    border-radius: 0;
-    box-shadow: none;
   }
   .contact-form h3,.contact-form p {
     text-align: left;
@@ -3473,6 +3443,45 @@ textarea:focus {
     text-align: center;
   }
 }
+/*RESPONSIVE CONTACT TABLET*/
+@media screen and (min-width: 768px) and (max-width: 1367px) {
+  .card-container-contact {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .card-contact {
+    width: 100%;
+  }
+  .sec3-contact {
+    flex-direction: row;
+  }
+  .sec5-contact {
+    margin: 0;
+    padding-top: 8em;
+  }
+  .sec6-contact {
+    display: grid;
+    padding: 15em 1em 3em 1em;
+  }
+ .sec6-header {
+    position: absolute;
+    width: 100%;
+  }
+  .sec6-header h2 {
+    margin: 0;
+    font-size: 6em;
+    padding: 0.5em 0 0.5em 0;
+  }
+  .sec6-content {
+    display: contents; /* permite que los hijos se posicionen en el grid del padre */
+  }
+ .contact-form {
+    grid-column: 1 / span 2;
+    padding: 2em 1em;
+  }
+}
+
 /* RESPONSIVE BLOG POST MOBILE (hasta 960 para incluir surface pro 7 y ipad air y que la sidebar no se corte)*/
 @media (max-width: 960px) {
   .container-bp {
@@ -4148,5 +4157,3 @@ textarea:focus {
     margin: 4em;
   }
 }
-
-/*RESPONSIVE STORE LOCATOR TABLET*/
