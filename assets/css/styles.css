@@ -3989,7 +3989,6 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     padding-top: 2em;
-    padding-bottom: 2em;
     gap: 2em;
   }
   #section1-store-locator article {
@@ -4006,6 +4005,7 @@ textarea:focus {
   }
   .article1-section1 h4 {
     padding-left: 0;
+    padding-top: 0;
   }
   #section2 article h5 {
     padding: 0.5em 0;
@@ -4155,5 +4155,78 @@ textarea:focus {
   }
   .icon-grid {
     margin: 4em;
+  }
+}
+/*RESPONSIVE STORE LOCATOR TABLET*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container-store-locator {
+    display: grid;
+    gap: 2em;
+  }
+  .store-locator-stores {
+    display: grid !important;
+  }
+  .left-number-locator {
+    align-items: flex-end;
+    border-right: 1px solid #e0e0e0;
+  }
+  .left-number-locator h1 {
+    position: static;
+    font-size: 7em;
+    margin: 0 0 0.2em 0;
+    transform: translate(0, 0);
+  }
+  .left-number-locator .p1 {
+  transform: translate(-60%, -80%);
+  }
+  .right-text-locator {
+    margin: 0;
+  }
+  .right-text-locator .p2 {
+    text-align: left;
+  }
+  .section5-sl {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+  }
+  .art1-sect5 {
+    width: 100%;
+    text-align: left;
+  }
+  .store-btn{
+    text-align: left;
+  }
+  .art2-sect5 {
+    grid-column: 2 / 3;
+  }
+  .art3-sect5 {
+    grid-column: 1 / span 2;
+  }
+   .features-shipping {
+    padding: 40px 1em;
+  }
+  .feature-item-shipping {
+    flex: 1 1 0;
+    padding: 2em 1em;
+  }
+  .store-locator-store-cards {
+    gap: 2.5em;
+  }
+  .store-locator-store-card {
+    flex-direction: row;
+    width: 90vw;
+    max-width: 1100px;
+  }
+  .store-locator-store-card img {
+    width: 50%;
+    object-fit: cover;
+    max-height: 320px;
+  }
+  .store-locator-store-card-content {
+    width: 50%;
+  }
+  .icon-grid {
+    flex-direction: row;
+    align-items: center;
   }
 }
