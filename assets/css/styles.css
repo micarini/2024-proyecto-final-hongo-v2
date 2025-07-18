@@ -1926,7 +1926,7 @@ p {
   margin: 5%;
 }
 
-.sec6-header h2::before,.sec6-header h2::after {
+.sec6-header h2::before, .sec6-header h2::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -2154,7 +2154,7 @@ p {
   position: relative;
 }
 
-.imagenes-grid-contact-1,.solid-box {
+.imagenes-grid-contact-1, .solid-box {
   object-fit: cover;
   background-color: #232323;
   transform: translateY(50%);
@@ -2214,7 +2214,7 @@ p {
   color: #d39663;
 }
 
-.product-price,.product-description {
+.product-price, .product-description {
   margin-bottom: 1.5em;
 }
 
@@ -2246,7 +2246,7 @@ p {
   color: #000;
 }
 
-.add-to-wishlist,.add-to-compare {
+.add-to-wishlist, .add-to-compare {
   padding: 10px;
   margin-top: 10px;
   background: none;
@@ -2254,7 +2254,7 @@ p {
   text-transform: uppercase;
 }
 
-.add-to-wishlist:hover,.add-to-compare:hover {
+.add-to-wishlist:hover, .add-to-compare:hover {
   color: #d39663;
 }
 
@@ -2298,7 +2298,7 @@ p {
   cursor: pointer;
 }
 
-.accordion-boton:hover,.accordion-boton.active {
+.accordion-boton:hover, .accordion-boton.active {
   color: #1c1c1c;
 }
 
@@ -2544,6 +2544,7 @@ p {
 
 .price-filter input[type="range"] {
   -webkit-appearance: none;
+  appearance: none;
   width: 100%;
   height: 4px;
   background: #ddd;
@@ -2932,7 +2933,7 @@ p {
   border-top: 1px solid #eaeaea;
 }
 
-.comment1-bp,.comment2-bp,.comment3-bp {
+.comment1-bp, .comment2-bp, .comment3-bp {
   border-top: 1px solid #eaeaea;
   padding: 20px 0;
 }
@@ -3044,16 +3045,16 @@ textarea:focus {
 }
 /*RESPONSIVE PRODUCT MOBILE*/
 @media (max-width: 768px) {
-  #gridProduct,#gridProduct2,.footer-container {
+  #gridProduct, #gridProduct2, .footer-container {
     grid-template-columns: 1fr;
   }
   .product-section {
     flex-direction: column;
   }
-  .product-grid-fotos,.product-side {
+  .product-grid-fotos, .product-side {
     width: 100%;
   }
-  .header-negro h4,.fa-heart, .menu {
+  .header-negro h4, .fa-heart, .menu {
     display: none;
   }
   .product-section {
@@ -3181,6 +3182,9 @@ textarea:focus {
   }
   .soporte {
     display: none;
+  }
+  .header-negro .menu2 li:not(:last-child)::after {
+    content: none !important;
   }
 }
 /* EN RESPONSIVE SE CREA UN BOTON PARA LA SIDEBAR DE SHOP */
