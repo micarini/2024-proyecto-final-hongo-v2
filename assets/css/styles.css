@@ -2452,7 +2452,19 @@ p {
   height: auto;
   margin-bottom: 1em;
 }
+.cardShop .card-icons {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  transition: opacity 0.3s ease;
+}
 
+.cardShop:hover .card-icons {
+  display: flex;
+}
 .cardShop .titulo {
   font-size: 1.5em;
   font-weight: 600;

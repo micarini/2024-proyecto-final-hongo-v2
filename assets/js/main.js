@@ -673,6 +673,21 @@ document.addEventListener("DOMContentLoaded", function () {
             img.setAttribute("src", productosShop[i].img);
             img.setAttribute("class", "foto");
 
+            let iconContainer = document.createElement("div");
+            iconContainer.className = "card-icons";
+            let iconCart = document.createElement("i");
+            iconCart.className = "fa-solid fa-cart-shopping";
+            iconCart.title = "Add to Cart";
+            let iconHeart = document.createElement("i");
+            iconHeart.className = "fa-solid fa-heart";
+            iconHeart.title = "Add to Wishlist";
+            let iconEye = document.createElement("i");
+            iconEye.className = "fa-solid fa-eye";
+            iconEye.title = "Quick View";
+            iconContainer.appendChild(iconCart);
+            iconContainer.appendChild(iconHeart);
+            iconContainer.appendChild(iconEye);
+
             let precio = document.createElement("p");
             precio.setAttribute("class", "precio");
             precio.textContent = productosShop[i].precio;
@@ -688,6 +703,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             cardShop.appendChild(img);
+            cardShop.appendChild(iconContainer);
             cardShop.appendChild(titulo);
             cardShop.appendChild(precio);
             gridShop.appendChild(cardShop);
