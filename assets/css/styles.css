@@ -1909,7 +1909,7 @@ p {
 .sec6-contact {
   padding: 50px;
   background-image: url("../fotos/pareja.jpg");
-  background-blend-mode: overlay;
+  background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
   height: 100vh;
