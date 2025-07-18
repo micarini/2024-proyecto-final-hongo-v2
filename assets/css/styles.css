@@ -105,7 +105,7 @@ p {
   color: #808080;
 }
 .inherit {
-  color: inherit;
+  color: inherit; /*significa que hereda el color del elemento padre*/
 }
 
 /* CLASES UTILES ALINEACIONES */
@@ -409,7 +409,7 @@ header .header-negro {
   margin: 10px;
 }
 
-.header-negro .menu2 li:not(:last-child)::after {
+.header-negro .menu2 li:not(:last-child)::after { /*se aplica a todos los elementos li de menu2 que no son el último hijo*/
   content: "|";
   color: #999999;
 }
@@ -436,7 +436,7 @@ header .header-blanco .symbols a {
 }
 
 nav ul li {
-  display: inline-block;
+  display: inline-block; /*permite que los elementos de la lista se alineen horizontalmente*/
 }
 
 nav a {
@@ -451,7 +451,7 @@ nav a:hover {
 
 nav ul li a.active {
   color: #fd9d38;
-  text-decoration: underline;
+  text-decoration: underline; /*subraya el texto del enlace activo*/
 }
 
 /*SLIDER*/
@@ -474,7 +474,7 @@ nav ul li a.active {
   color: rgb(0, 0, 0, 0.5);
   background-color: transparent;
   border: none;
-  position: relative;
+  position: relative; /*es relativo al contenedor osea que se mueve con él*/
   transition: color 0.3s ease;
 }
 
@@ -482,9 +482,9 @@ nav ul li a.active {
   color: rgb(0, 0, 0);
 }
 
-.botones-container button::before,.botones-container button::after {
+.botones-container button::before,.botones-container button::after { /*líneas a los lados de los botones del slider*/ 
   content: "";
-  position: absolute;
+  position: absolute; /*significa que un elemento se posiciona absolutamente con respecto a su contenedor posicionado más cercano, o al viewport si no hay un contenedor posicionado*/
   width: 11px;
   height: 0.5px;
   background-color: #555555;
@@ -500,11 +500,7 @@ nav ul li a.active {
   right: -20px;
 }
 
-.botones-container button:first-child::before {
-  display: none;
-}
-
-.botones-container button:last-child::after {
+.botones-container button:first-child::before, .botones-container button:last-child::after { 
   display: none;
 }
 
@@ -566,15 +562,15 @@ nav ul li a.active {
 
 /* SECTION 1 HOME*/
 #section1 {
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr); /*la grid se divide en 4 columnas de igual tamaño*/
+  grid-template-rows: repeat(2, 1fr); /*la grid se divide en 2 filas de igual tamaño*/
   gap: 18px;
   max-height: 450px;
 }
 
 #img1-section1 {
-  grid-column: span 2;
-  grid-row: span 2;
+  grid-column: span 2; /* Ocupa 2 columnas, 50% del ancho */
+  grid-row: span 2;  /* Ocupa 2 filas, 100% del alto */
   width: 100%;
   min-height: 300px;
   background-image: url("../fotos/decor-banner-01.jpg");
@@ -608,10 +604,9 @@ nav ul li a.active {
 }
 
 .section1-texto {
-  font-weight: 10px;
+  font-weight: 100;
   margin-top: 40px;
   line-height: 0.9em;
-  letter-spacing: 0.02em;
   padding-top: 2em;
   margin-right: 1em;
   margin-left: 5em;
@@ -619,7 +614,7 @@ nav ul li a.active {
 
 .section1-texto h3 {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.8em;
   line-height: 1.2em;
   margin-bottom: 20px;
 }
@@ -635,7 +630,7 @@ nav ul li a.active {
 }
 #section2.visible {
   opacity: 1;
-  transform: translateY(150px);
+  transform: translateY(150px); /* Se mueve hacia arriba al hacerse visible */
 }
 #section2 div {
   grid-template-columns: repeat(3, 1fr);
@@ -646,10 +641,10 @@ nav ul li a.active {
   min-height: 150px;
   max-height: 250px;
   align-items: flex-end; /* Coloca el texto en la parte inferior */
-  text-align: left;
+  text-align: left; 
   padding: 10px;
-  transition: transform 0.3s ease-in-out;
-  overflow: hidden;
+  transition: transform 0.3s ease-in-out; 
+  overflow: hidden;  /* Evita que el contenido se desborde */
 }
 #section2 article h5 {
   position: absolute;
@@ -1915,105 +1910,109 @@ p {
   padding: 50px;
   background-image: url("../fotos/pareja.jpg");
   background-blend-mode: overlay;
-  opacity: 0.8;
-  gap: 2em;
-  transform: translateY(100px);
+  background-size: cover;
+  background-position: center;
   height: 100vh;
 }
 
 .sec6-header h2 {
   font-size: 7em;
   margin: 5%;
+  position: relative;
 }
 
-.sec6-header h2::before, .sec6-header h2::after {
+.sec6-header h2::before,
+.sec6-header h2::after {
   content: "";
   position: absolute;
   top: 50%;
-  width: 0.2em;
+  width: 30px;
   height: 2px;
   background-color: #fff;
 }
 
 .sec6-header h2::before {
-  left: -30px;
+  left: -40px;
 }
 
 .sec6-header h2::after {
-  right: -30px;
-}
-
-.sec6-contact {
-  padding: 50px;
-  background-image: url("../fotos/pareja.jpg");
-  background-blend-mode: overlay;
-  opacity: 0.8;
-  gap: 2em;
-  transform: translateY(100px);
-  height: 100vh;
+  right: -40px;
 }
 
 .sec6-content {
+  display: flex;
   gap: 2em;
-  padding: 2em 0;
-  margin: 0 auto;
-  align-items: stretch;
   padding: 1em;
-}
-
-.sec6-header h2 {
-  font-size: 7em;
-  margin: 5%;
+  height: auto;
 }
 
 .article-img {
-  flex: 1 1 30%;
-}
-
-.article-img img {
-  min-height: 100%;
+  flex: 1 1 33.33%;
+  background-image: url("../fotos/planta.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .article-item {
-  flex: 1 1 30%;
-  min-height: 100%; /* Igual que la imagen */
+  flex: 1 1 33.33%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
 }
 
-.article-item iframe {
+.article-item .video-bg {
+  background-image: url("../fotos/contact-classic-07.jpg");
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 250px;
+  height: 100%;
 }
 
 .play-button {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.1); /* transparencia */
+  border: 3px solid white;
   border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  z-index: 100;
 }
 
-.contact-form {
-  width: 300px;
-  padding: 20px;
+.play-button i {
+  font-size: 1.5em;
+  color: white;
+  margin-left: 3px; /* opcional para centrar visualmente el triángulo */
 }
 
+.play-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+
 .contact-form {
-  flex: 1 1 30%;
+  flex: 1 1 33.33%;
   padding: 2rem;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0); /* semitransparente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
 }
 
-.contact-form h3 {
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  text-align: left !important;
-}
-
+.contact-form h3,
 .contact-form p {
-  margin-bottom: 1.5em;
-  text-align: left !important;
+  text-align: left;
 }
 
 .contact-form input {
@@ -2022,6 +2021,7 @@ p {
   font-size: 1rem;
   background-color: #000;
   border-bottom: 1px solid gray;
+  color: white;
 }
 
 .contact-form button {
@@ -2039,13 +2039,14 @@ p {
   transition: 0.3s ease;
 }
 
+
 #sectionvacia {
-  height: 60vh;
+  height: 30vh;
   overflow: hidden;
 }
 
 .sec7-contact {
-  margin: 5%;
+  padding: 5%;
   gap: 2em;
 }
 
@@ -2062,6 +2063,7 @@ p {
 
 .sec7-contact p {
   font-size: 14px;
+  max-width: 200px;
 }
 
 .shop-btn {
@@ -2145,27 +2147,27 @@ p {
 /*parte que esta entre dos secciones*/
 .parent {
   display: grid;
-  grid-template-columns: repeat(3, 25.471rem); /* 3 columnas */
+  grid-template-columns: repeat(3, 25rem); /* 3 columnas, 100% del ancho (ese numero de rem es el ancho de cada columna) */
   gap: 0px;
-  margin: 0 auto;
+  margin: 0 auto; /*0 elimina el margen superior e inferior, y auto lo centra de los dos lados*/
   justify-content: center;
-  max-width: calc(3 * 25.471rem + 10px);
+  max-width: calc(3 * 25rem + 10px); /* Limita el ancho máximo del grid a la suma de las 3 columnas más 10px extra. Esto asegura que el grid no se expanda más allá de ese ancho. */
   margin-top: 4rem;
-  position: relative;
+  position: relative; /* Para posicionar el overlay */
 }
 
 .imagenes-grid-contact-1, .solid-box {
   object-fit: cover;
   background-color: #232323;
   transform: translateY(50%);
-  border-top: 0.938rem solid white;
-  border-bottom: 0.938rem solid white;
+  border-top: 1rem solid white;
+  border-bottom: 1rem solid white;
   height: 28.507rem;
 }
 
 .imagenes-grid-contact-1 {
-  border-left: 0.938rem solid white;
-  border-right: 0.438rem solid white;
+  border-left: 1rem solid white;
+  border-right: 0.rem solid white;
   width: 25.471rem;
 }
 
@@ -3077,11 +3079,6 @@ textarea:focus {
     margin-left: 0%;
     margin-bottom: 3em;
   }
-  .breadcrumb-prod {
-    /*NO SE HACE*/
-    text-align: left;
-    align-items: left;
-  }
   .footer-container,.textofooter {
     justify-items: center;
     text-align: center;
@@ -3100,11 +3097,6 @@ textarea:focus {
   }
   .product-side {
     margin-top: 4em;
-  }
-  .breadcrumb-prod {
-    /*NO SE HACE*/
-    text-align: left;
-    align-items: left;
   }
   .grid-botones {
     justify-items: left;
@@ -3267,13 +3259,13 @@ textarea:focus {
    
   }
   #banner-shop {
-    height: 40vw;
+    height: 40vh;
   }
 }
 /*RESPONSIVE SHOP TABLET GRANDE*/
 @media (min-width: 1024px) and (max-width: 1200px) {
   #banner-shop {
-    height: 40vw;
+    height: 40vh;
   }
   .container-shop {
     padding-top: 4em;
@@ -3424,7 +3416,7 @@ textarea:focus {
     margin: 0 0 1.5em 0;
     padding: 0;
     box-sizing: border-box;
-    display: block;
+    display: block; /*como un bloque, ocupando todo el ancho disponible de su contenedor y comenzando en una nueva línea*/
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -3435,7 +3427,7 @@ textarea:focus {
     margin-right: auto;
     padding: 0 0.2em;
   }
-  .sec7-contact article:nth-child(2) {
+  .sec7-contact article:nth-child(2) { /*nth child 2 se refiere al segundo articulo de esta sección*/
     flex-direction: column;
     gap: 0.5em;
     align-items: center;
@@ -3495,6 +3487,18 @@ textarea:focus {
  .contact-form {
     grid-column: 1 / span 2;
     padding: 2em 1em;
+    margin-top: 4em;
+    height: 50vh;
+    border: 10px solid white
+  }
+  .video-bg{
+    border: 10px solid white
+  }
+   #sectionvacia {
+    height: 5vh;
+  }
+  .article-img{
+    border: 4px solid white
   }
 }
 
@@ -4187,13 +4191,13 @@ textarea:focus {
     border-right: 1px solid #e0e0e0;
   }
   .left-number-locator h1 {
-    position: static;
+    position: static; 
     font-size: 7em;
     margin: 0 0 0.2em 0;
     transform: translate(0, 0);
   }
   .left-number-locator .p1 {
-  transform: translate(-60%, -80%);
+  transform: translate(-60%, -80%); /*desplazo el contenido en negativo: significa que se mueve hacia arriba)*/
   }
   .right-text-locator {
     margin: 0;
@@ -4213,10 +4217,10 @@ textarea:focus {
     text-align: left;
   }
   .art2-sect5 {
-    grid-column: 2 / 3;
+    grid-column: 2 / 3; /*esto significa que ocupa la segunda columna de la cuadrícula*/
   }
   .art3-sect5 {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 2; /*span 2 significa que ocupa dos columnas*/
   }
    .features-shipping {
     padding: 40px 1em;
